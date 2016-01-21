@@ -1,0 +1,144 @@
+/*
+* Modal styles
+*/
+.reveal-modal-bg {
+	background: $black;
+	background: $black-45;
+	bottom: 0;
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1004;
+	left: 0;
+}
+.reveal-modal {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	display: none;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1005;
+	left: 0;
+	background-color: $white;
+	padding: 1.875rem;
+	border: solid 1px $steel;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 10px $black-40;
+	.column {
+		min-width: 0;
+	}
+	.columns {
+		min-width: 0;
+	}
+	> * {
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+	&.round {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 1000px;
+	}
+	&.collapse {
+		padding: 0;
+	}
+	&.full {
+		height: 100vh;
+		height: 100%;
+		left: 0;
+		margin-left: 0 !important;
+		max-width: none !important;
+		min-height: 100vh;
+		top: 0;
+	}
+	&.toback {
+		z-index: 1003;
+	}
+	.close-reveal-modal {
+		color: $hp-blue;
+		cursor: pointer;
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 1;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		width: 30px;
+	}
+	.back-reveal-modal {
+		@extend .close-reveal-modal;
+		left: 15px;
+		color: $iron;
+	}
+	a {
+		color: $hp-orange;
+		text-decoration: none;
+	}
+}
+@media only screen and(max-width: 40em) {
+	.reveal-modal {
+		min-height: 100vh;
+	}
+}
+@media only screen and(min-width: 40.0625em) {
+	.reveal-modal {
+		left: 0;
+		margin: 0 auto;
+		max-width: 62.5rem;
+		right: 0;
+		width: 80%;
+		top: 6.25rem;
+		&.tiny {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 30%;
+		}
+		&.small {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 40%;
+		}
+		&.medium {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 60%;
+		}
+		&.large {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 70%;
+		}
+		&.xlarge {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 95%;
+		}
+		&.full {
+			left: 0;
+			margin: 0 auto;
+			max-width: 62.5rem;
+			right: 0;
+			width: 100%;
+		}
+	}
+}

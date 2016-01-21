@@ -1,0 +1,285 @@
+.hero-banner-section   {
+	margin-top: -10px;
+	width:100%;
+	min-height:390px;
+	
+	
+	   .main-container {
+	   	width:100%;
+	    min-height:390px;   
+	    background-color:red;
+		        @media #{$medium-only} {
+				background:none !important;
+				}
+				@media #{$small-only} {
+				background:none !important;
+				}
+				
+			
+			.hero-banner-background-image {
+				width: 100%;
+				@media #{$large-up} {
+				display:none;
+				}
+				
+			    @media #{$medium-only} {
+				display:block;
+				}
+				@media #{$small-only} {
+				background:block;
+				}
+				
+					
+				}	
+				
+			  .container {
+			  .row {	
+			  
+			   @media #{$medium-only} {
+										 margin-top:-340px;
+										}
+										
+										
+				         .banner-header {
+						                @media #{$small-only} {
+										 background-color: #006ca6;
+										 /* padding: 0px 30px; */
+										}
+										 @media #{$medium-only} {
+										 width: 100%;
+										 max-width: 370px;
+										 min-height:335px;
+										}
+										
+										
+							 h1 { 
+							            font-size: 60px;
+										/* font-family: 'proxima-nova-regular'; */
+										font-family: 'proxima-nova-light';
+										line-height: normal;
+										color: #005f91;
+										font-weight: 500;
+										padding: 25px 0px 0px 0px;
+										margin-bottom: 0px;
+										
+										@media #{$small-only} {
+										font-size:27px;
+										color:#fff;
+										padding: 0px;
+										
+										}
+										@media #{$medium-only} {
+										font-size:40px;
+										}
+				
+				
+                                }
+							  p {
+								        font-size:24px;
+										font-family: 'proxima-nova-regular';
+										color:#000;
+										margin: 20px 0px 50px 0px;
+										
+										@media #{$small-only} {
+										font-size:16px;
+										color:#fff;
+										margin: 20px 0px 20px 0px;
+										
+										
+										}
+										@media #{$medium-only} {
+										font-size:20px;
+										}
+								 
+								 }
+							 }	
+							 
+							 
+						 .carousel-container  {
+							
+								width: 380px;
+								min-height: 370px;
+								margin: 25px 0px;
+								margin-right:10px;
+								float:right;
+								text-align:center;
+								/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
+								background: rgb(255,255,255); /* Old browsers */
+								background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+								background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+								background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+								-webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.4);
+								-moz-box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.4);
+								box-shadow: 0px 0px 0px 10px rgba(255,255,255,0.4);
+
+							  @media #{$small-only} {
+									width:100%;
+									height:auto;
+									min-height:100px;
+									text-align:left;
+									background:none;
+									float:none;
+									padding: 0px 30px;
+									margin: 15px 0;
+									box-shadow:none;
+									
+									.slick-dots{
+										display: none !important;
+									}
+									}
+
+							 @media #{$medium-only} {
+									width:100%;
+									height:auto;
+									min-height:100px;
+									text-align:left;
+									background:none;
+									float:none;
+									padding:0px 17px;
+									margin-bottom: 15px;
+									box-shadow:none;
+										.slick-dots{
+											display: none !important;
+										}
+									}		
+							 
+							 
+							 img {
+								 margin:0 auto;
+								margin-top:25px;
+								text-align:center;
+								 @media #{$small-only} {
+									margin:3px 8px 3px 3px;
+									display:inline-block;
+									float:left;
+									
+									}
+								@media #{$medium-only} {
+								float:left;
+									margin:10px;
+									display:inline-block;
+									
+									}	
+								
+								 }
+							 p {
+								 font-size:18px;
+								  font-family: 'proxima-nova-regular';
+								  color:#000;
+								  
+								  @media #{$small-only} {
+									display:none;}
+								  @media #{$medium-only} {
+									display:inline-block;
+									width:75%;
+									margin-top: 0px;
+									margin-bottom:7px;}	
+								  
+								 }
+								.hidden-p {
+									font-family: 'proxima-nova-regular';
+								  color:#000;
+								  font-size:18px;
+								  position: relative;
+								display:none;
+								 @media #{$small-only} {
+								 display:inline-block;
+								 margin-top:35px;
+								 
+                                  
+									}
+									 @media #{$medium-only} {
+									 display:inline-block;
+									margin-bottom:8px;
+									margin-top:4px;
+									}
+								
+								} 
+								.carousel-desc{
+									font-family: 'proxima-nova-regular';
+									@media #{$large-up} {
+										padding: 0 25px;
+									}
+									@media #{$medium-only} {
+										font-size: 16px;
+										min-height: 72px;
+									}
+								}
+							 
+							.button-class {
+							margin-bottom:20px;
+							a {
+							
+							 @media #{$small-only} {
+							 padding:7px 17px ;
+									}
+									 @media #{$medium-only} {
+										padding:7px 17px ;
+										}
+							
+							
+							}
+							}
+							
+							 }	 
+					
+					}
+					  }		
+				
+		 } 
+	
+	
+      .slick-prev {
+        left: 30px;
+        background: url(../../../../images/left-arrw.png) no-repeat center center;
+        @media #{$small-only} {
+          margin-top:-10px;
+		  left:0px;
+        }
+		@media #{$medium-only} {
+         margin-top:-10px;
+		 left:-10px;
+        }
+      }
+      .slick-next {
+        right: 30px;
+        background: url(../../../../images/right-arrw.png) no-repeat center center;
+        @media #{$small-only} {
+         margin-top:-10px;
+		 right:0px;
+        }
+		@media #{$medium-only} {
+         margin-top:-10px;
+		 right:-10px;
+        }
+      }
+      .slick-prev, .slick-next {
+        background-size: 17px 30px;
+        width: 20px;
+        height: 33px;
+        margin-top: -110px;
+        opacity: 1;
+        z-index: 49;
+		 @media #{$small-only} {
+		  margin-top:-10px;
+		  
+		 
+		 }
+		 @media #{$medium-only} {
+		  margin-top:-10px;
+		 
+		  
+		 
+		 }
+	
+      }
+      .slick-prev:before, .slick-next:before {
+        content: '';
+      }
+			.slick-dots {
+				left:0;
+			}
+	
+	
+	}

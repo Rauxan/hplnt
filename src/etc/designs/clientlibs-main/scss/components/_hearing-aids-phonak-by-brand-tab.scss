@@ -1,0 +1,356 @@
+.hearing-aids-by-brand-product-tab {
+	.phonak-by-brand-main-container {
+	  .row {
+		margin: 0;
+		.container {
+			 .header-content {
+			  text-align:center;
+			  
+			   .phonak-logo {
+				padding:20px 20px 10px 20px;
+				border-right:1px solid #ccc;	
+				display:inline;
+				@media #{$small-only} {
+					border-bottom:1px solid #ccc;
+					border-right:0px solid #ccc;
+					padding-bottom: 30px;
+					display:block;
+					margin: 0 auto;
+					width: 245px;
+				}
+				  img {
+					  max-width: 200px;
+					  vertical-align: sub;
+						  @media #{$small-only} {
+							padding-right:0px;
+						  }
+					  }
+				}
+			   .head-tag {
+				   padding: 0 20px 0px 20px;
+				   margin-bottom: 30px;
+				   display:inline-block;
+				   @media #{$small-only} {
+						display: block;
+						padding-top: 20px;
+				   }
+				 h4 {
+					margin:0px;
+					font-size:36px;
+					font-family: 'proxima-nova-regular';
+					color: #0f75ab;
+					
+					}	 
+				}
+			 } 
+			.copy-of-the-navigator {
+				display:none;
+				.tabs {
+					margin:0px;
+					padding-left:0px;
+					li {
+						width:33.33%;
+						text-align:center;
+						border-bottom: 1px solid #fff;
+						border-right: 1px solid #fff;
+						&:last-child{
+							width:33.34%;
+						}
+						
+						@media #{$small-only} {
+							height: 68px;
+							display: table;
+						}
+						a {
+							text-align:center;
+							text-decoration:none;
+							font-size:18px;
+							@media #{$small-only} {
+								/* padding: 20px 15px; */
+								padding: 0;
+								display: table-cell;
+								vertical-align: middle;
+							}
+						}
+						/*
+						.how-to-buy {
+							@media #{$small-only} {
+								padding:6.5px 15px;
+							}
+						}
+						*/
+					}
+					li:last-child {
+					a {
+					border-right :none;}}
+					.active {
+					a {background-color:#afbabe;}
+					}
+				} 
+				@media #{$small-only} {
+					display:block;
+				}
+				@media #{$medium-only} {
+					display:block;
+				}
+			
+			}
+			.footer-part-copy {
+				display:none;
+				padding:0px 25px 95px 25px;
+				-moz-box-shadow:    inset 0 0 1px #000000;
+				-webkit-box-shadow: inset 0 0 1px #000000;
+				box-shadow:         inset 0 0 1px #000000;
+				border-left: 10px solid #fff;
+				.columns {
+					padding:10px 0px;
+				}
+				@media #{$medium-only} {
+					display:block;
+					min-height: 372px;
+				}
+				.price-data{
+					padding: 5px 0 15px 0;
+					font-family: 'proxima-nova-regular';
+					font-size: 16px;
+				}
+			}
+			.footer-part-copy-above-buyer-guide{
+				display: none;
+				@media #{$small-only} {
+					display: block !important;
+				}
+			}
+			.price-test-div-copy {
+			display:none;
+			font-size: 13px;
+			border-left: 12px solid #fff;
+			@media #{$medium-only} {
+			display:block;
+			text-align: center;
+			}
+			
+			}
+			.price-test-div-copy-above-buyer-guide{
+				display: none;
+				@media #{$small-only} {
+					display: block !important;
+					margin-bottom: 30px;
+				}
+			}
+				.price-test-div {
+			
+			font-size: 13px;
+			@media #{$medium-only} {
+			display:none;
+			}
+			@media #{$small-only} {
+				display: none;
+			}
+			
+			}
+			
+			.product-img-div {
+			text-align:center;
+			border: 1px solid #ccc;
+            padding: 37px 0px;
+			min-height: 372px;
+				img{
+					max-width: 100%;
+					max-height: 295px;
+				}
+				
+			}
+			.product-small-img-div {
+				margin-top:10px;
+				@media #{$small-only} {
+					//padding-left:45px;
+				}
+				/*
+				.columns {margin-right:10px;}
+				.columns:last-child {
+					 float: left;
+				}
+				*/
+				/*
+				p {
+					font-size:14px;
+					font-family: 'proxima-nova-regular';
+					margin-top:2px;
+				}
+				img {    
+					border: 1px solid #ccc;
+					padding: 2px 15px;
+				}
+				*/
+				@media #{$small-only} {
+					text-align: center;
+				}
+				.product-thumb-image{
+					width: 65px;
+					text-align: center;
+					display: inline-block;
+					margin: 0 5px 15px 0;
+					vertical-align: top;
+					cursor: pointer;
+					@media #{$small-only} {
+						margin: 0 5px 15px 5px;
+					}
+					p {
+						font-size:14px;
+						font-family: 'proxima-nova-light';
+						margin-top:2px;
+						text-align: center;
+						line-height: normal;
+						margin-bottom: 0;
+					}
+					.thumb-image-container{
+						text-align: center;
+						display: inline-block;
+						width: 100%;
+						height: 50px;
+						img {
+							border: 1px solid #ccc;
+							padding: 2px 15px;
+							height: 45px;
+							max-width: 100%;
+						}
+					}
+				}
+			}
+			
+			.audeo-content-div {
+			/* min-height:368px; */
+			@media #{$large-up} {
+			border-left:12px solid #fff;
+			min-height:368px;
+			}
+			.tabs-content {
+			margin-bottom:0px;}
+			.main-tab-navigator {
+			@media #{$small-only} {
+			display:none;
+			}
+			@media #{$medium-only} {
+			display:none;
+			}
+			
+			}
+			.tabs-container  {
+			.tabs {
+			margin:0px;
+			padding-left:0px;
+					li {
+					width:33.33%;
+					text-align:center;
+					border-bottom: 1px solid #fff;
+					border-right: 1px solid #fff;
+					&:last-child{
+						width:33.34%;
+					}
+				
+					a {
+					text-align:center;
+					text-decoration:none;
+					font-size:18px;
+					@media #{$small-only} {
+					padding: 20px 15px;
+					}
+					}
+					.how-to-buy {
+					@media #{$small-only} {
+					padding:6.5px 15px;
+					}
+					}
+					}
+					li:last-child {
+					a {
+					border-right :none;}}
+					
+					.active {
+					a {background-color:#afbabe;}
+					}
+				} 
+			}
+			
+			 .header-part {
+			 text-align:center;
+			border-bottom:2px solid #fff;
+			border-right: 2px solid #fff;
+			background-color:#eff3f4;
+			
+			 }
+			
+			 
+			.content-part {
+				 padding: 15px 35px 75px 35px;
+				 background-color:#eff3f4;
+				 @media #{$large-up} {
+					min-height: 313px;
+				 }
+				 @media #{$small-only} {
+					background-color: initial;
+					padding: 5px 0 15px 0;
+				 }
+				 .buyers-guide-button{
+					p{
+						font-family: 'proxima-nova-regular';
+						margin-bottom: 7px;
+					}
+					.global-btn{
+						display: inline-block;
+						min-width: 153px;
+						text-align: center;
+					}
+					@media #{$small-only} {
+						text-align: center;
+					}
+				 }
+				 .more-link{
+					display: none;
+					a{
+						text-decoration: none;
+						color: $hp-orange;
+						font-family: 'proxima-nova-regular';
+						font-size: 18px;
+						display: inline-block;
+					}
+					@media #{$small-only} {
+						display: block;
+						padding: 5px 0 20px 0;
+						text-align: center;
+					}
+				 }
+			}
+			.footer-part {
+				@media #{$medium-only} {
+					display:none;
+				}
+				@media #{$small-only} {
+					display: none;
+				}
+				.price-data{
+					padding: 5px 0;
+					font-family: 'proxima-nova-regular';
+					font-size: 16px;
+				}
+				.columns:last-child {
+					 float: left;
+				}
+				padding: 12px 10px;
+				border:1px solid #ccc;
+				margin:10px 0px;
+			
+			}
+			
+			}
+			 
+		  
+		  
+		
+		}  
+	  }
+		
+	}
+	
+}

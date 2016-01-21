@@ -1,0 +1,9 @@
+// selectively include components
+.buyer-slide-container {
+  h3 {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#dbdbdb')
+  }
+  ul {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#dbdbdb');
+  }
+}

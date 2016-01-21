@@ -1,0 +1,54 @@
+/*
+*Listening Environments styles
+*/
+.listening-environments-block{
+	.listening-introduction{
+		color:$oil;
+		font-size:22px;
+		line-height: 30px;
+			
+	}
+	.listening-environments-content-area{
+		.listening-image-text-block{
+			margin-bottom:20px;
+			border-bottom:1px solid $hp-light-gray;
+			padding-bottom:20px;
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+			.listening-image-block{
+				@media #{$small-only} {
+					text-align:center;
+				}
+			}
+		}	
+		.listening-text-block{
+			padding:0px 0px 0px 10px;
+			.listening-headding{
+				color:red;
+				font-size:18px;
+				color:$oil;
+				font-weight:bold;
+				margin:0px;
+				@media #{$small-only} {
+					padding: 10px 0px 0px 0px;
+				}
+			}
+			
+			.listening-text{
+				font-size:15px;
+				color:$oil;
+				@media #{$medium-only} {
+					padding-right:30px;
+				}
+			}
+			.button-block{
+				@media #{$small-only} {
+					text-align:center;
+				}
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+// The latest settings can be found here:
+// https://github.com/zurb/bower-foundation/blob/master/scss/foundation/_settings.scss
+// Add all global variabled such as colors, etc.
+
+
+//$hp-blue: #005985; //Sample color variables. Add all color variables on this file
+
+
+$hp-blue: #006da6;
+$hp-dark-blue: #006699;
+$hp-light-blue: #338ab8;
+$hp-line-blue: #00a7e0;
+$hp-blue-89: #0eace2;
+$hp-white: #ffffff;
+$hp-orange: #ff7e47;
+$hp-black: #000000;
+$hp-black-333: #333333;
+$hp-azure: #eff3f4;
+$hp-steel-blue: #066da2;
+$hp-light-steel-blue: #0797d9;
+$hp-blue-quotes: #00a7df;
+
+$hp-gray-40: #666666;
+$hp-gray-80: #cccccc;
+$hp-gray-86: #d7dadb;
+$hp-gray-93: #ececec;
+$hp-gray-241: #f1f1f1;
+$hp-gray-95: #f2f2f2;
+$hp-gray-96: #f6f6f6;
+$hp-light-gray: #e5eaef;
+$hp-light-gray-2: #f3f3f3;
+$hp-slider-active-gray: #a9a9a9;
+$hp-arrow-blue: #006ca6;
+
+$black-75: rgba(0, 0, 0, 0.75);
+$black-45: rgba(0, 0, 0, 0.45);
+$black-40: rgba(0, 0, 0, 0.4);
+
+$color-bondi-blue-approx: #008cba;
+$color-bahama-blue-approx: #007095;
+$color-pink-swan-approx: #b9b9b9;
+$color-chateau-green-approx: #43ac6a;
+$color-sea-green-approx: #368a55;
+$color-thunderbird-approx: #cf2a0e;
+$color-meteor-approx: #cf6e0e;
+$color-viking-approx: #61b6d9;
+$color-la-palma-approx: #339900;
+$color-allports-approx: #0078a0;
+
+$smoke-90: #e6e6e6;
+$ghost: #fafafa;
+$blue-52: #005685;
+$blue-100: #ecfaff;
+$gray-75: #afbabe;
+
+
+%gray-gradient {
+	background: rgba(237,237,237,1);
+	background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(245,245,245,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(100%, rgba(245,245,245,1)));
+	background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(245,245,245,1) 100%);
+	background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(245,245,245,1) 100%);
+	background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(245,245,245,1) 100%);
+	background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(245,245,245,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#f5f5f5', GradientType=1 );
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.lowercase {
+	text-transform: lowercase;
+}

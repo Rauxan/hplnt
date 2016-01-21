@@ -1,0 +1,151 @@
+/*
+* Page Level Global Styles
+*/
+//overwrite default foundation max-width for this project
+.row {
+  max-width: 75rem;
+}
+body {
+    vertical-align: baseline;
+    font-family: 'proxima-nova-regular', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+		padding-top: 115px;
+}
+@media only screen and(max-width: 64em) {
+	body {
+		padding-top: 55px;
+	}
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+h1,h3,h4 {
+    color: $hp-white;
+}
+h2,h5,h6 {
+    color: $hp-blue;
+  a {
+    color: $hp-blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: proxima-nova-regular;
+}
+h5 {
+  font-family: proxima-nova-regular;
+  font-size: 40px;
+  text-align: center;
+  line-height: 43px;
+}
+h6 {
+  font-family: proxima-nova-regular;
+  font-size: 20px;
+  a {
+    font-size: 20px;
+  }
+}
+.hdg-lt-36 {
+	font-size: 36px;
+  font-family: proxima-nova-light;
+}
+p {
+    color: $hp-black;
+    font-size: 16px;
+    font-family: proxima-nova-regular;
+}
+a {
+    font-size: 14px;
+    font-family: proxima-nova-regular;
+}
+
+
+.fixed{
+	position: fixed;
+}
+.clearfix {
+	clear: both;
+}
+.left-img {
+	float: right;
+	margin: {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+.right-img {
+	float: right;
+	margin: {
+		bottom: 20px;
+		left: 20px;
+	}
+}
+
+.columns {
+	&.alpha {
+		padding: {
+			left: 0;
+		}
+		@media #{$small-only} {
+			padding: {
+				left: 0.9375rem;
+			}
+		}
+	}
+	&.omega {
+		padding: {
+			right: 0;
+		}
+		@media #{$small-only} {
+			padding: {
+				right: 0.9375rem;
+			}
+		}
+	}
+}
+
+.hide-for-small-only {
+	@media #{$small-only} {
+		display: none;
+	}
+}
+.show-for-small-only {
+	display: none;
+	@media #{$small-only} {
+		display: block;
+	}
+}
+.show-for-medium-only {
+	display: none;
+	@media #{$medium-only} {
+		display: block;
+	}
+}
+.rm-mrgn-top {
+	margin-top: 0;
+}
+.hrz-divider {
+	margin: 20px 0;
+	border: {
+		bottom: 1px solid $hp-light-gray;
+	}
+}
+.intro-column-tablet-desktop {
+	display: block;
+	@media #{$small-only} {
+		display: none;
+	}
+}
+
+.intro-column-mobile {
+	display: none;
+	@media #{$small-only} {
+		display: block;
+	}
+}

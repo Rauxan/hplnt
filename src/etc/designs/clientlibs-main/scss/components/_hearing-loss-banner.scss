@@ -1,0 +1,108 @@
+.hearing-loss-section {
+	
+	width:100%;
+	
+	
+	
+	   .main-container {
+	   	width:100%;
+	       
+	    background-color:red;
+		        @media #{$medium-only} {
+				background:none !important;
+				}
+				@media #{$small-only} {
+				background:none !important;
+				}
+				
+			
+			.hero-banner-background-image {
+				@media #{$large-up} {
+				display:none;
+				}
+				
+			    @media #{$medium-only} {
+				display:block;
+				}
+				@media #{$small-only} {
+				background:block;
+				}
+				
+					
+				}	
+				
+			  .container {
+			  .row {	
+			  
+			   @media #{$medium-only} {
+										
+										}
+										
+										
+				         .banner-header {
+						                @media #{$small-only} {
+										 background-color: #006ca6;
+										 padding: 0px 30px;
+										}
+										 @media #{$medium-only} {
+										 min-height:335px;
+										}
+										
+										
+							 h1 { 
+							            font-size: 48px;
+										font-family: 'proxima-nova-regular';
+										line-height: normal;
+										color: #005f91;
+										font-weight: 500;
+										padding: 25px 0px 0px 0px;
+										margin-bottom: 0px;
+										
+										@media #{$small-only} {
+										font-size:30px;
+										color:#fff;
+										padding: 0px;
+										
+										}
+										@media #{$medium-only} {
+										font-size:37px;
+										}
+				
+				
+                                }
+							  p {
+								        font-size:27px;
+										font-family: 'proxima-nova-regular';
+										color:#000;
+										margin: 20px 0px 50px 0px;
+										
+										@media #{$small-only} {
+										font-size:18px;
+										color:#fff;
+										margin: 20px 0px 20px 0px;
+										
+										
+										}
+										@media #{$medium-only} {
+										font-size:20px;
+										}
+								 
+								 }
+							 }	
+							 
+							 
+							 
+					
+					}
+					  }		
+				
+		 } 
+	
+	
+     
+	
+	
+	
+	
+	
+	}

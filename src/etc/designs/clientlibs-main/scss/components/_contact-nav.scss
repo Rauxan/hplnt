@@ -1,0 +1,449 @@
+/*
+* Contact Navigaton styles
+*/
+
+//@extend-elements
+//original selectors
+//.contact-navigations-sidebar ul li .icon-text, .contact-navigations-sidebar ul li i
+%contact-sidebar-icon {
+	display: block;
+	text-align: center;
+	background-color: $hp-orange;
+	color: $white;
+	font-size: 12px;
+	padding: 3px 5px;
+}
+
+%contact-sidebar-icon-1 {
+	@extend %contact-sidebar-icon;
+	font-size: 18px;
+}
+
+//original selectors
+//.call-block:after, .call-block:before
+%call-block-after {
+	left: 100%;
+	top: 40px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+//original selectors
+//.chat-block:after, .chat-block:before
+%chat-block-after {
+	left: 100%;
+	top: 45%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+//original selectors
+//.send-block:after, .send-block:before
+%send-block-after {
+	left: 100%;
+	top: 28%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+%contact-shadow {
+	box-shadow: 0 0 7px rgba(0,0,0, .4);
+	-moz-box-shadow: 0 0 7px rgba(0,0,0, .4);
+	-webkit-box-shadow: 0 0 7px rgba(0,0,0, .4);
+	-o-box-shadow: 0 0 7px rgba(0,0,0, .4);
+}
+
+
+.contact-navigations-sidebar {
+	position: fixed;
+	right: 0;
+	top: 125px;
+	z-index: 50;
+	ul {
+		padding: 10px 10px 5px 10px;
+		background: $white;
+		margin: 0;
+		li {
+			.icon-text {
+				@extend %contact-sidebar-icon;
+				text-transform: uppercase;
+				margin-top: -5px;
+			}
+			i {
+				@extend %contact-sidebar-icon;
+				font-size: 20px;
+			}
+		}
+	}
+}
+.contact-navigation-blocks {
+	display: none;
+}
+.hide {
+	opacity: 0;
+	display: none;
+}
+.close {
+	position: absolute;
+	right: 9px;
+	top: 0;
+	color: $hp-blue;
+	font-size: 24px;
+	cursor: pointer;
+	> i {
+		color: $hp-blue;
+	}
+}
+.call-block {
+	@extend %contact-shadow;
+	position: fixed;
+	background: $white;
+	border: 5px solid $aluminum;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	padding-bottom: 20px;
+	width: 300px;
+	right: 75px;
+	top: 125px;
+	z-index: 49;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: .7s;
+	&:after {
+		@extend %call-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $white;
+		border-width: 11px;
+		margin-top: -19px;
+	}
+	&:before {
+		@extend %call-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $aluminum;
+		border-width: 16px;
+		margin-top: -24px;
+	}
+	span {
+		display: block;
+		color: $steel;
+	}
+	a {
+		color: $steel;
+		text-decoration: none;
+	}
+	> .info {
+		margin-left: 90px;
+		margin-top: 10px;
+		font-size: 18px;
+		margin-right: 20px;
+		p {
+			margin: 0;
+		}
+	}
+}
+.chat-block {
+	@extend %contact-shadow;
+	position: fixed;
+	background: $white;
+	border: 4px solid $aluminum;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	width: 300px;
+	right: 75px;
+	top: 125px;
+	z-index: 49;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: .7s;
+	&:after {
+		@extend %chat-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $white;
+		border-width: 11px;
+		margin-top: 0;
+		top: 70px;
+	}
+	&:before {
+		@extend %chat-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $aluminum;
+		border-width: 16px;
+		margin-top: 0;
+		top: 65px;
+	}
+	span {
+		vertical-align: top;
+	}
+	> .info {
+		margin-left: 90px;
+		margin-top: 20px;
+		font-size: 18px;
+		margin-right: 20px;
+		p {
+			margin: 0;
+		}
+	}
+}
+.send-block {
+	@extend %contact-shadow;
+	position: fixed;
+	background: $white;
+	border: 4px solid $aluminum;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	width: 300px;
+	right: 75px;
+	top: 125px;
+	z-index: 49;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: .7s;
+	opacity: 1;
+	&:after {
+		@extend %send-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $white;
+		border-width: 11px;
+		margin-top: 0;
+		top: 123px;
+	}
+	&:before {
+		@extend %send-block-after;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: $aluminum;
+		border-width: 16px;
+		margin-top: 0;
+		top: 118px;
+	}
+	span {
+		display: block;
+	}
+	> .info {
+		margin-left: 90px;
+		margin-top: 20px;
+		font-size: 18px;
+		margin-right: 20px;
+		p {
+			margin-top: 0;
+			font-size: 14px;
+		}
+		label {
+			font-size: 18px;
+			line-height: 1;
+			color: $oil;
+		}
+		input {
+			border: 1px solid $iron;
+			margin-bottom: 10px;
+		}
+		.sendblock-textarea {
+			@media #{$large-up} {
+				height: 105px;
+			}
+		}
+		.global-btn {
+			font-size: 20px;
+		}
+	}
+}
+.callblock-call-icon, .chatblock-call-icon , .sendblock-call-icon {
+	color: $hp-blue;
+	font-size: 50px;
+	position: absolute;
+	left: 26px;
+	top: 15px;
+}
+.chatblock-call-icon {
+	font-size: 47px;
+}
+.sendblock-call-icon {
+	font-size: 40px;
+}
+.available-text {
+	display: inline !important;
+	margin-left: -4px;
+}
+#check-icon {
+	color: $color-la-palma-approx;
+	font-size: 24px;
+	margin-right: 7px;
+}
+.check-text {
+	margin-top: 10px !important;
+}
+.headding {
+	font-size: 18px;
+	font-weight: bold;
+}
+.info-time {
+	line-height: 1.2;
+}
+.tel-number {
+	line-height: 2;
+	input[type=number], input[type=text], input.number {
+		margin: 0 5px 10px;
+		&:nth-child(1), &:nth-child(2) {
+			float: left;
+			width: 45px;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			float: left;
+			width: 60px;
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+	color: $aluminum;
+	font-style: italic;
+}
+::-moz-placeholder {
+	color: $aluminum;
+	font-style: italic;
+}
+:-ms-input-placeholder {
+	color: $aluminum;
+	font-style: italic;
+}
+
+@media only screen and(max-width: 64em) {
+	.contact-navigations-sidebar {
+		position: fixed;
+		right: 50px;
+		top: 5px;
+		z-index: 99;
+		ul {
+			background: none;
+			margin-top: 0;
+			padding: 5px 0 0;
+			li {
+				list-style: none;
+				border: 1px solid $hp-orange;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 5px;
+				float: left;
+				margin-right: 6px;
+				.icon-text {
+					font-size: 18px;
+				}
+				i {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.icon-text {
+		display: none !important;
+	}
+	.call-block {
+		right: 17px;
+		top: 57px;
+		z-index: 99;
+		&:after {
+			top: -17px;
+			left: 55%;
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: $white;
+			border-width: 18px;
+			margin-left: -7px;
+			margin-bottom: -5px;
+		}
+		&:before {
+			top: 0;
+			left: 55%;
+			border-color: rgba(194, 225, 245, 0);
+			border-bottom-color: $aluminum;
+			border-width: 19px;
+			margin-left: -8px;
+			margin-top: -42px;
+		}
+	}
+	.chat-block {
+		right: 17px;
+		top: 57px;
+		z-index: 99;
+		&:after {
+			top: -36px;
+			left: 66%;
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: $white;
+			border-width: 18px;
+			margin-left: -7px;
+			margin-bottom: -5px;
+		}
+		&:before {
+			top: 0;
+			left: 66%;
+			border-color: rgba(194, 225, 245, 0);
+			border-bottom-color: $aluminum;
+			border-width: 19px;
+			margin-left: -8px;
+			margin-top: -42px;
+		}
+	}
+	.send-block {
+		right: 11px;
+		top: 57px;
+		z-index: 99;
+		&:after {
+			top: -35px;
+			left: 77%;
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: $white;
+			border-width: 18px;
+			margin-left: -7px;
+			margin-bottom: -5px;
+			margin-top: 0;
+		}
+		&:before {
+			top: 0;
+			left: 77%;
+			border-color: rgba(194, 225, 245, 0);
+			border-bottom-color: $aluminum;
+			border-width: 19px;
+			margin-left: -8px;
+			margin-top: -42px;
+		}
+	}
+	.sendblock-textarea {
+		padding: 5px;
+		margin-top: 10px;
+		width: 100% !important;
+	}
+}
+* .contact-navigations-sidebar ul li {
+	list-style: none;
+	margin-bottom: 5px;
+	border: 1px solid $hp-orange;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	cursor: pointer;
+}
+input:-moz-placeholder {
+	color: $aluminum;
+	font-style: italic;
+}
+
+.send-block {
+	@media #{$small-only} {
+		height: 255px;
+		.info {
+			overflow-y: scroll;
+			height: 225px;
+			margin: 0;
+			padding: 20px 20px 20px 90px;
+		}
+	}
+}
+	

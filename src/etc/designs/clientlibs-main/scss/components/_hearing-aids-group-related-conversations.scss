@@ -1,0 +1,228 @@
+.hearing-aids-all-groups-related-conversations {
+	.tab-panel-contents {
+		.content-left-tab-panel{
+			@media screen and (min-width: 0px) and (max-width: 650px) {
+				width: 100%;
+			}
+			.tabs-container {
+				.tabs {
+					&.vertical{
+						@media #{$small-only} {
+							margin-top: 0;
+						}
+						@media screen and (min-width: 0px) and (max-width: 650px) {
+							margin-top: 0;
+							margin-bottom: 0px;
+						}
+					}
+					padding-left:0px;
+					width:100%;
+					max-width:100%;
+					.tab-title {
+						a {
+							text-decoration:none;
+							background-color:#fff;
+							font-family: 'proxima-nova-regular';
+							font-size:18px;
+							padding: 0 3rem 0 0;
+							margin-bottom: 35px;
+							@media #{$medium-only} {
+								margin-bottom: 25px;
+							}
+							/*
+							@media #{$small-only} {
+								margin-bottom: 25px;
+							}
+							*/
+							@media screen and (min-width: 0px) and (max-width: 650px) {
+								margin-bottom: 0;
+								color:#00a7e0;
+								border-top: 1px solid $hp-light-gray;
+								padding: 16px 0 15px 0;
+							}
+						}
+						&:last-child{
+							a{
+								@media screen and (min-width: 0px) and (max-width: 650px) {
+									border-bottom: 1px solid $hp-light-gray;
+								}
+							}
+						}
+						.fa{
+							display: none;
+							position: relative;
+							float: right;
+							top: -38px;
+							right: 10px;
+							color: #0f75ab;
+							font-size: 18px;
+							@media screen and (min-width: 0px) and (max-width: 650px) {
+								display: block;
+							}
+						}
+					}
+					.active {
+						a {
+							color:#00a7e0;
+							border:none;
+							@media screen and (min-width: 0px) and (max-width: 650px) {
+								color:#00a7e0;
+								border-top: 1px solid $hp-light-gray;
+							}
+						} 
+					}
+				}
+			}
+		}
+	 
+		.content-right-tab-panel{
+			@media screen and (min-width: 651px) {
+				display: block !important;
+			}
+			@media screen and (min-width: 0px) and (max-width: 650px) {
+				width: 100%;
+				display: none;
+			}
+			.tabs-content {
+				@media #{$medium-only} {
+					margin-bottom: 30px;
+				}
+				.content {
+					/* padding:0px 15px; */
+					padding:0px;
+					@media screen and (min-width: 0px) and (max-width: 650px) {
+						padding:0px;
+					}
+					@media #{$small-only} {
+						padding:0px;
+					}
+					h2 {
+						font-size:24px;
+						font-family: 'proxima-nova-regular';
+						color:$oil;
+						margin-top: 0;
+						margin-bottom: 15px;
+						line-height: normal;
+					}
+					h4{
+						font-size:18px;
+						font-family: 'proxima-nova-regular';
+						color:$oil;
+						margin-top: 15px;
+						margin-bottom: 15px;
+						line-height: normal;
+					}
+					p{
+						font-family: 'proxima-nova-light';
+						font-size:16px;
+						color:$oil;
+						margin-top: 0;
+						line-height: normal;
+					}
+					ul{
+						margin: 0;
+						li{
+							font-family: 'proxima-nova-light';
+							font-size:16px;
+							color:$oil;
+							margin-top: 0;
+						}
+					}
+					h6{
+						color:$oil;
+					}
+				}
+			}
+		}
+	}
+}
+
+.listening-environments-group-related-conversations-tab-content{
+	@media #{$small-only} {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+/* Setting back button and lists for mobile screen's */
+.back-of-inner-text-tabs{
+	border-top: 1px solid $hp-light-gray;
+	border-bottom: 1px solid $hp-light-gray;
+	padding: 15px 0;
+	display: none;
+	color: $hp-orange;
+	cursor: pointer;
+	margin-bottom: 35px;
+	/*
+	@media #{$large-up} {
+		display: none !important;
+	}
+	@media #{$medium-only} {
+		display: none !important;
+	}
+	@media #{$small-only} {
+		display: block;
+	}
+	*/
+	@media screen and (min-width: 0px) and (max-width: 650px) {
+		/* display: block; */
+		display: none;
+	}
+	@media screen and (min-width: 651px) {
+		display: none !important;
+	}
+	.fa{
+		font-size:24px;
+		margin-top: 0px;
+		position: relative;
+		padding-left: 0.9375rem;
+	}
+	span{
+		font-family: 'proxima-nova-regular';
+		font-size:18px;
+		display: inline-block;
+		margin-left: 5px;
+		line-height: normal;
+		position: relative;
+	}
+}
+.list-of-inner-text-tabs{
+	display: block;
+	/*
+	@media #{$large-up} {
+		display: block !important;
+	}
+	@media #{$medium-only} {
+		display: block !important;
+	}
+	@media #{$small-only} {
+		display: none;
+	}
+	*/
+	@media screen and (min-width: 0px) and (max-width: 650px) {
+		display: block;
+		/* border-bottom: 1px solid $hp-light-gray; */
+		padding: 0 0 0 0;
+		margin-bottom: 40px;
+	}
+	@media screen and (min-width: 651px) {
+		display: block !important;
+	}
+}
+
+
+
+/* Setting tabs content to be height as '0', and height as 'auto' when it is active */
+/*
+.tabs-content{
+	&>.content{
+		height: 0;
+		overflow-y: hidden;
+		display: block;
+		&.active{
+			height: auto;
+		}
+	}
+}
+*/

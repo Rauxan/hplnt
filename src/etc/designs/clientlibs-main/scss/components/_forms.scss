@@ -1,0 +1,470 @@
+/*
+* Form styles
+*/
+
+//@extend-elements
+//original selectors
+//input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea
+%form-inputs {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	background-color: $white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $iron;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px 2px $smoke-90;
+	color: $tuatara;
+	display: block;
+	font-family: inherit;
+	font-size: 0.875rem;
+	height: 2.3125rem;
+	margin: 0 0 1rem 0;
+	padding: 0.5rem;
+	width: 100%;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: border-color 0.15s linear, background 0.15s linear;
+}
+
+//original selectors
+//input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus
+%form-inputs-focus {
+	background: $ghost;
+	border-color: $aluminum;
+	outline: none;
+}
+
+
+input[type="text"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="password"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="date"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="datetime"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="datetime-local"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="month"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="week"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="email"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="number"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="search"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="tel"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="time"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="url"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="color"] {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+textarea {
+	@extend %form-inputs;
+	&:focus {
+		@extend %form-inputs-focus;
+	}
+	&:disabled {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+}
+input[type="text"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="text"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+fieldset[disabled] {
+	input[type="text"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="password"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="date"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="datetime"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="datetime-local"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="month"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="week"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="email"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="number"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="search"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="tel"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="time"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="url"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	input[type="color"] {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+	textarea {
+		background-color: $gainsboro;
+		cursor: default;
+	}
+}
+input[type="password"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="password"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="date"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="date"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="datetime"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="datetime"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="datetime-local"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="datetime-local"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="month"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="month"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="week"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="week"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="email"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="email"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="number"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="number"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="search"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="search"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="tel"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="tel"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="time"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="time"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="url"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="url"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="color"][disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+input[type="color"][readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+textarea[disabled] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+textarea[readonly] {
+	background-color: $gainsboro;
+	cursor: default;
+}
+
+/* Selct box Styles */
+.dd-container {
+	width: auto !important;
+}
+.dd-select {
+	border-radius: 0 !important;
+	background: rgba(255,255,255,1) !important;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%) !important;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(219,219,219,1))) !important;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%) !important;
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%) !important;
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%) !important;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dbdbdb', GradientType=0 ) !important;
+	width: auto !important;
+	.dd-selected {
+		font-size: 18px;
+		color: $black;
+		padding: 12px 35px 12px 20px !important;
+		font-weight: normal !important;
+	}
+	.dd-pointer {
+		right: 19px !important;
+		margin-top: -5px !important;
+	}
+	.dd-pointer-down {
+		border: solid 9px transparent !important;
+		border-top: solid 11px $hp-blue !important;
+	}
+}
+.dd-options {
+	width: 100% !important;
+	.dd-option {
+		padding: 12px 20px !important;
+		font-size: 18px;
+		color: $black;
+	}
+}

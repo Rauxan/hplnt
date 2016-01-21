@@ -1,0 +1,17 @@
+/*
+*  Tabs content default styles
+*/
+
+
+
+/* Setting tabs content to be height as '0', and height as 'auto' when it is active */
+.tabs-content{
+	&>.content{
+		height: 0;
+		overflow-y: hidden;
+		display: block;
+		&.active{
+			height: auto;
+		}
+	}
+}

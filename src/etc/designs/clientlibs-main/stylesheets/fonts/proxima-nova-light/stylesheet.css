@@ -1,0 +1,13 @@
+/* Webfont: proximaNovaLight */
+@font-face {
+    font-family: 'proximaNovaLight';
+    src: url('proxima-nova-light-webfont.eot');
+    src: url('proxima-nova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proxima-nova-light-webfont.woff2') format('woff2'),
+         url('proxima-nova-light-webfont.woff') format('woff'),
+         url('proxima-nova-light-webfont.ttf') format('truetype'),
+         url('proxima-nova-light-webfont.svg#proximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}

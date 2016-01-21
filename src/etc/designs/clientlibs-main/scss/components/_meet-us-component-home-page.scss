@@ -1,0 +1,100 @@
+/*
+*home page upgrade-component-options styles
+*/
+
+.meet-us-component{
+	background-color: $hp-light-gray;
+	padding: 52px 0 62px 0;
+	font-family: 'proxima-nova-regular';
+	@media #{$medium-only} {
+		padding: 40px 0 40px 0;
+	}
+	@media #{$small-only} {
+		padding: 30px 0 40px 0;
+	}
+	.content-box{
+		h2{
+			font-size: 48px;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			margin-bottom: 70px;
+			span{
+				display: block;
+				text-align: center;
+				line-height: normal;
+			}
+			@media #{$medium-only} {
+				font-size: 36px;
+				margin-bottom: 40px;
+			}
+			@media #{$small-only} {
+				font-size: 30px;
+				margin-bottom: 0px;
+				padding: 0 9px;
+			}
+		}
+		.meet-us-component-column{
+			.image-wrap{
+				text-align: center;
+				img{
+					width: 100%;
+					max-width: 170px;
+					border-radius: 50%;
+					-o-border-radius: 50%;
+					-ms-border-radius: 50%;
+					-moz-border-radius: 50%;
+					-webkit-border-radius: 50%;
+				}
+				@media #{$small-only} {
+					margin-top: 50px;
+				}
+			}
+			h3{
+				padding: 0;
+				margin-bottom: 0;
+				text-align: center;
+				font-size: 20px;
+				color: $hp-black-333;
+				line-height: normal;
+				@media only screen and (min-width: 801px) and (max-width: 1100px) {
+					min-height: 50px;
+				}
+				@media #{$small-only} {
+					padding: 0 30px;
+				}
+				@media only screen and (min-width: 350px) and (max-width: 380px) {
+					padding: 0 70px;
+				}
+				@media only screen and (min-width: 381px) and (max-width: 430px) {
+					padding: 0 100px;
+				}
+			}
+			&:nth-child(2){
+				h3{
+					@media #{$small-only} {
+						padding: 0 20px;
+					}
+					@media only screen and (min-width: 350px) and (max-width: 380px) {
+						padding: 0 30px;
+					}
+					@media only screen and (min-width: 381px) and (max-width: 430px) {
+						padding: 0 45px;
+					}
+				}
+			}
+			p{
+				font-size: 14px;
+				color: $hp-black-333;
+			}
+			.column-link{
+				text-align: center;
+				a{
+					color: $hp-orange;
+					text-decoration: none;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

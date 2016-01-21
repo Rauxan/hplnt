@@ -1,0 +1,111 @@
+/*
+* Utility spotlights (on buyers template) CSS
+*/
+
+.utility-spotlights-container {
+  display: table;
+  margin: 20px auto 40px;
+  max-width: 75rem;
+  width: 100%;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  @media #{$custom-0-1028} {
+    max-width: 830px;
+  }
+  @media #{$custom-0-650} {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.utility-spotlight {
+  background-color: $hp-azure;
+  display: table-cell;
+  position: relative;
+  padding: 15px;
+  width: 50%;
+  border-left: 10px solid $hp-white;
+  @media #{$custom-0-650} {
+    display: block;
+    border-left: none;
+    width: 100%;
+  }
+  &:first-child {
+    border-right: 10px solid $hp-white;
+    border-left: none;
+    @media #{$custom-0-650} {
+      border-right: none;
+      margin-bottom: 10px;
+    }
+  }
+  &.icon-base {
+    .text-wrap.height-base {
+      background-position: 0 -11px;
+    }
+  }
+  &.button-base {
+    h4,p {
+      @media #{$custom-1029-up} {
+        margin-right: 31%;
+      }
+    }
+  }
+  h4 {
+    margin: 0 0 5px 0;
+  }
+  h4,a {
+    font-family: 'proxima-nova-regular';
+    font-size: 18px;
+    color: $hp-blue;
+  }
+  h4,a,p {
+    line-height: normal;
+  }
+  a {
+    margin: 0;
+    text-decoration: none;
+    color: $hp-orange;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    font-size: 18px;
+    @media #{$custom-0-1028} {
+      margin: 0 0 9px 0;
+    }
+    @media #{$custom-1029-up} {
+      margin: 0;
+    }
+  }
+  .global-btn-container {
+    @media #{$custom-0-1028} {
+      text-align: center;
+    }
+    @media #{$custom-1029-up} {
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+    }
+  }
+  .global-btn {
+    padding: 7px 9px;
+    @media #{$custom-0-1028} {
+      display: inline-block;
+    }
+    @media #{$custom-1029-up} {
+      line-height: 0;
+    }
+  }
+  .text-wrap {
+    //add svg icon scheme here
+    &.signs {
+      padding-left: 70px;
+      background: url("images/icon_signs.svg") no-repeat transparent 0;
+      background-size: 65px 65px;
+    }
+  }
+}

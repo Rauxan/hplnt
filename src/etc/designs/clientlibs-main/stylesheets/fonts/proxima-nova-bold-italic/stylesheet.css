@@ -1,0 +1,13 @@
+/* Webfont: proximaNovaBoldItalic */
+@font-face {
+    font-family: 'proximaNovaBoldItalic';
+    src: url('proxima-nova-bold-italic-webfont.eot');
+    src: url('proxima-nova-bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proxima-nova-bold-italic-webfont.woff2') format('woff2'),
+         url('proxima-nova-bold-italic-webfont.woff') format('woff'),
+         url('proxima-nova-bold-italic-webfont.ttf') format('truetype'),
+         url('proxima-nova-bold-italic-webfont.svg#proximaNovaBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}

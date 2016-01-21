@@ -1,0 +1,186 @@
+/*
+*product styles
+*/
+
+.products-group{
+	/* margin-top: 30px; */
+	margin-bottom: 0;
+}
+.product-with-left-image{
+	margin-top: 30px;
+	@media screen and (min-width: 0px) and (max-width: 650px) {
+	}
+	.product-image{
+		img{
+			border: 0px solid $white;
+			max-width: 100%;
+		}
+		@media #{$medium-only} {
+			text-align: center;
+		}
+		@media #{$small-only} {
+			text-align: center;
+		}
+	}
+	.product-text{
+		h3{
+			font-family: 'proxima-nova-regular';
+			font-size:18px;
+			color: $oil;
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+		p{
+			font-family: 'proxima-nova-light';
+			font-size:14px;
+			color: $oil;
+			margin-top: 0;
+			margin-bottom: 10px;
+			@media #{$large-up} {
+				/* padding-right: 20px; */
+				padding-right: 0px;
+			}
+		}
+		a{
+			text-decoration: none;
+			&.details{
+				color: $hp-orange;
+				span{
+					font-family: 'proxima-nova-regular';
+					font-size:18px;
+					display: inline-block;
+					margin-left: 0;
+					line-height: normal;
+					position: relative;
+				}
+				.fa{
+					font-size:24px;
+					margin-top: 0px;
+					position: relative;
+					padding-left: 0.3375rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+.product-compare-box-support{
+	position: relative;
+	height: 30px;
+}
+.product-compare-box{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding: 3px 10px;
+	/* background-color: #d0cedc; */
+	margin-left: -7px;
+	input {
+	   &[type=checkbox]{
+		  opacity: 0;
+		  position: absolute;
+		  
+		  width: 100%;
+		  height: 100%;
+		  left: 0;
+		  top: 0;
+
+		  &:checked + label:before {
+			 /* background: $oil; */
+		  }
+
+		  & + label:before {
+			 display: inline-block;
+			 text-align: center;
+			 line-height: 1;
+
+			 border: 0.0625rem solid $oil;
+			 width: 1.1rem;
+			 height: 1.1rem;
+			 margin-right: 0.5rem;
+			
+			 font-size: 0.875rem;
+			 color: white;
+			 background: white;
+			 
+			 position: absolute;
+			 left: 8px;
+			 top: 6px;
+		  }
+	   }
+
+	   &[type=checkbox] {
+		  & + label:before {
+			 content: "";
+			 padding-right: 1px;
+			 border-radius: 0.125rem;
+		  }
+	   }
+	}
+	label{
+		font-family: 'proxima-nova-light';
+		font-size: 12px;
+		padding-left: 23px;
+	}
+	.fa{
+		position: absolute;
+		left: 9px;
+		top: 6px;
+		color: #379800;
+		display: none;
+	}
+	/*
+	input {
+	   &[type=checkbox], &[type=radio] {
+		  opacity: 0;
+		  position: absolute;
+
+		  &:checked + label:before {
+			 background: $oil;
+		  }
+
+		  & + label:before {
+			 display: inline-block;
+			 text-align: center;
+			 line-height: 1;
+
+			 border: 0.0625rem solid $oil;
+			 width: 1rem;
+			 height: 1rem;
+			 margin-right: 0.5rem;
+			
+			 font-size: 0.875rem;
+			 color: white;
+			 background: white;
+		  }
+	   }
+
+	   &[type=checkbox] {
+		  & + label:before {
+			 content: "\f00c";
+			 padding-right: 1px;
+			 border-radius: 0.125rem;
+		  }
+	   }
+
+	   &[type=radio] {
+		  & + label:before {
+			 content: "\f00c";
+			 border-radius: 50%;
+		  }
+	   }
+	}
+	*/
+}
+
+
+.hdg-lt-36
+{
+	&.product-heading{
+		line-height: normal;
+		margin-top: 35px;
+		margin-bottom: 10px;
+	}
+}

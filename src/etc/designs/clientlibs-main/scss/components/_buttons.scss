@@ -1,0 +1,120 @@
+/*
+* Button styles - use this pattern below for buttons across the site
+* i.e. <div class="global-btn orange"><a href="#"></a></div><!-- orange is used for color changes if necessary
+*/
+
+.global-btn {
+	font-family: 'proxima-nova-regular';
+	font-size: 16px;
+	text-decoration: none;
+	padding: 12px 17px;
+	border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+  a {
+  }
+  &.orange{
+  	background-color: $hp-orange;
+		color: $hp-white;
+    &:hover {
+    }
+  }
+  &.white a{
+    &:hover {
+    }
+  }
+  &.blue {
+    background-color: $hp-blue;
+    color: $hp-white;
+  }
+}
+
+/* Global Button styles */
+
+//@extend-elements
+//original selectors
+//button, .button
+%primary-button {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	border-style: solid;
+	border-width: 0;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.875rem 1.75rem 0.9375rem 1.75rem;
+	font-size: 18px;
+	background-color: $color-bondi-blue-approx;
+	border-color: $color-bahama-blue-approx;
+	color: $white;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: background-color 300ms ease-out;
+}
+
+//original selectors
+//button.expand, .button.expand
+%expand-button {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+button, .button {
+	@extend %primary-button;
+	&:hover {
+		background-color: $color-bahama-blue-approx;
+		color: $white;
+	}
+	&:focus {
+		background-color: $color-bahama-blue-approx;
+		color: $white;
+	}
+	&.large {
+		padding: 1.125rem 2.25rem 1.1875rem 2.25rem;
+		font-size: 1.25rem;
+	}
+	&.small {
+		padding: 0.875rem 1.75rem 0.9375rem 1.75rem;
+		font-size: 0.8125rem;
+	}
+	&.tiny {
+		padding: 0.625rem 1.25rem 0.6875rem 1.25rem;
+		font-size: 0.6875rem;
+	}
+	&.expand {
+		@extend %expand-button;
+	}
+	&.left-align {
+		text-align: left;
+		text-indent: 0.75rem;
+	}
+	&.right-align {
+		text-align: right;
+		padding-right: 0.75rem;
+	}
+	&.radius {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 3px;
+	}
+	&.orange {
+		background: $hp-orange;
+		color: $white;
+	}
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+@media only screen and(min-width: 40.0625em) {
+	button, .button {
+		display: inline-block;
+	}
+}

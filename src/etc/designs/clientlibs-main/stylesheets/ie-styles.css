@@ -1,0 +1,8 @@
+/* line 3, ../scss/ie-styles.scss */
+.buyer-slide-container h3 {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#dbdbdb');
+}
+/* line 6, ../scss/ie-styles.scss */
+.buyer-slide-container ul {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#ffffff', endColorstr='#dbdbdb');
+}
