@@ -4323,7 +4323,17 @@ tabs {
     .top-bar.expanded .top-bar-section .has-dropdown:not(.moved) > ul {
       padding: 0; }
     .top-bar.expanded .top-bar-section .dropdown {
-      clip: initial; } }
+      clip: initial; }
+      .top-bar.expanded .top-bar-section .dropdown .dropdown {
+        display: block;
+        position: relative !important;
+        height: auto;
+        left: 0;
+        width: auto; }
+        .top-bar.expanded .top-bar-section .dropdown .dropdown li {
+          margin-bottom: 0; }
+          .top-bar.expanded .top-bar-section .dropdown .dropdown li a {
+            padding-left: 40px; } }
 @media only screen and (max-width: 64em) {
   .top-bar-section {
     background: #006da6;
@@ -4352,7 +4362,17 @@ tabs {
         padding: 10px 0 10px 0.9375rem;
         text-transform: capitalize;
         text-decoration: none;
-        width: 100%; }
+        width: 100%;
+        position: relative; }
+        .top-bar-section ul li > a:after {
+          content: "\f105";
+          color: #ffffff;
+          display: block;
+          font: 18px/1 FontAwesome;
+          margin-top: -9px;
+          position: absolute;
+          top: 50%;
+          right: 10px; }
       .top-bar-section ul > li {
         margin-bottom: 1px; }
         .top-bar-section ul > li a {
@@ -4374,15 +4394,6 @@ tabs {
           padding-bottom: 20px; }
         .top-bar-section .has-dropdown.moved > a:after {
           display: none; }
-      .top-bar-section .has-dropdown > a:after {
-        content: "\f105";
-        color: #ffffff;
-        display: block;
-        font: 18px/1 FontAwesome;
-        margin-top: -9px;
-        position: absolute;
-        top: 50%;
-        right: 10px; }
     .top-bar-section .dropdown {
       clip: rect(1px, 1px, 1px, 1px);
       height: 1px;
@@ -4478,7 +4489,9 @@ tabs {
         display: inline-block;
         vertical-align: middle; }
         .external-links ul li > a span:first-child {
-          height: 27px; } }
+          height: 27px; }
+      .external-links ul li > a:after {
+        content: ''; } }
 .guide-block-wrap {
   background: #ffffff;
   border: 10px solid rgba(229, 234, 239, 0.4);
@@ -5119,7 +5132,8 @@ footer .columns .columns {
           background: none;
           float: none;
           padding: 0px 17px;
-          margin-bottom: 15px;
+          margin-bottom: 10px;
+          margin-top: 15px;
           box-shadow: none; }
           .hero-banner-section .main-container .container .row .carousel-container .slick-dots {
             display: none !important; } }
@@ -7660,7 +7674,9 @@ textarea[readonly] {
     @media only screen and (min-width: 50.0625em) {
       .find-clinic-results-block .result-note {
         font-family: 'proxima-nova-regular' !important;
-        font-size: 18px !important; } }
+        font-size: 18px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important; } }
     @media only screen and (min-width: 40.6875em) and (max-width: 50em) {
       .find-clinic-results-block .result-note {
         padding: 0 !important;
@@ -7761,7 +7777,10 @@ textarea[readonly] {
     display: block; }
     .centered-elements .find-clinic-selectbox {
       margin: 0 0 30px !important; } }
-    @media only screen and (max-width: 40.625em) and (min-width: 410px) and (max-width: 650px) {
+    @media only screen and (max-width: 40.625em) and (min-width: 410px) and (max-width: 475px) {
+      .centered-elements .find-clinic-selectbox {
+        margin: 0 35px 25px 35px !important; } }
+    @media only screen and (max-width: 40.625em) and (min-width: 476px) and (max-width: 650px) {
       .centered-elements .find-clinic-selectbox {
         margin: 0 0 0px !important; } }
 

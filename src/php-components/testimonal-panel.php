@@ -1,4 +1,3 @@
-
 	<section>
 		<div class="testimonal-panel">
 			<h3>

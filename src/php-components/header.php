@@ -1,4 +1,3 @@
-
 <header class="header">
   <!--Header Goes Here-->
   
@@ -161,14 +160,14 @@
                                 	<li><a href="#" class="large-12 columns">
                                       <div class="row">
                                         <div class="large-4 column-np-left"><img src="images/buyers-guide.jpg" class="menu-buyers-guide-image" /></div>
-                                        <div class="large-8 column-np-left">Comparison tool</div>
+                                        <div class="large-8 column-np-left">Comparison Tool</div>
                                       </div>
                                       </a>
 									</li>
                                 	<li><a href="#" class="large-12 columns">
                                       <div class="row">
                                         <div class="large-4 column-np-left"><img src="images/buyers-guide.jpg" class="menu-buyers-guide-image" /></div>
-                                        <div class="large-8 column-np-left">Buyer's guide</div>
+                                        <div class="large-8 column-np-left">Buyer's Guide</div>
                                       </div>
                                       </a>
 									</li>
@@ -229,7 +228,7 @@
           
           
   
-  
+<!-- Mobile Navigation Starts here -->
 <nav class="top-bar mobile-nav" data-topbar>
   <ul class="title-area">
    <!-- <li class="name">
@@ -269,7 +268,7 @@
           </li>
           <li class="has-dropdown"><a href="#">Hearing aids</a>
             <ul class="dropdown">
-                <li class="has-dropdown"><a href="#">Choosing a Hearing Aid</a>
+                <li><a href="#">Choosing a Hearing Aid</a>
                     <ul class="dropdown">
                         <li><a href="#">By Listening Environments</a></li>
                         <li><a href="#">By Brands</a></li>
@@ -277,7 +276,7 @@
                         <li><a href="#">By Products</a></li>
                     </ul>
                 </li>
-                <li class="has-dropdown"><a href="#">Owning a Hearing Aid</a>
+                <li><a href="#">Owning a Hearing Aid</a>
                     <ul class="dropdown">
                         <li><a href="#">Insurance</a></li>
                         <li><a href="#">Financing</a></li>
@@ -286,7 +285,7 @@
                         <li><a href="#">Batteries & Accessories</a></li>
                     </ul>
               </li>
-                <li class="has-dropdown"><a href="#">Tools & Resources</a>
+                <li><a href="#">Tools & Resources</a>
                     <ul class="dropdown">
                         <li><a href="#">Comparison tool</a></li>
                         <li><a href="#">Buyer's guide</a></li>
@@ -321,6 +320,7 @@
     </div>
   </section>
 </nav>
+<!-- Mobile Navigation Ends here -->
           
           
         </div>

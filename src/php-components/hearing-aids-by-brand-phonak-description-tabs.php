@@ -1,4 +1,3 @@
-
 <section>
 	<div class="header-brand-logo-content">
 		<div class="brand-logo">

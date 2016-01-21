@@ -1,4 +1,3 @@
-
 	<section>
 		<div class="column-np-left small-12 medium-12 large-4 cta-boxes listening-environments-cta-boxes">
 			<div class="columns small-12 medium-6 large-12">

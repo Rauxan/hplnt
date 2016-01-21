@@ -92,6 +92,10 @@
 		@media #{$large-up} {
 			font-family: 'proxima-nova-regular' !important;
 			font-size: 18px !important;
+			padding: {
+				left: 0 !important;
+				right: 0 !important;
+			}
 		}
 		@media #{$medium-only} {
 			padding: 0 !important;
@@ -213,7 +217,10 @@
 		display: block;
 		.find-clinic-selectbox {
 			margin: 0 0 30px !important;
-			@media screen and (min-width: 410px) and (max-width: 650px) {
+			@media screen and (min-width: 410px) and (max-width: 475px) {
+				margin: 0 35px 25px 35px !important;
+			}
+			@media screen and (min-width: 476px) and (max-width: 650px) {
 				margin: 0 0 0px !important;
 			}
 		}

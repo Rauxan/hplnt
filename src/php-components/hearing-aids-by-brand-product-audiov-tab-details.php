@@ -1,4 +1,3 @@
-
 <section class="hearing-aids-by-brand-product-tab">
 	<div class="phonak-by-brand-main-container">
 		<div class="row">

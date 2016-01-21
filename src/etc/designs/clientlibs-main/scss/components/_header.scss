@@ -352,6 +352,19 @@
 		}
 		.dropdown {
 			clip: initial;
+			.dropdown {
+				display: block;
+				position: relative !important;
+				height: auto;
+				left: 0;
+				width: auto;
+				li {
+					margin-bottom: 0;
+					a {
+						padding-left: 40px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -385,6 +398,17 @@
 			text-transform: capitalize;
 			text-decoration: none;
 			width: 100%;
+			position: relative;
+			&:after {
+				content: "\f105";
+				color: $white;
+				display: block;
+				font: 18px/1 FontAwesome;
+				margin-top: -9px;
+				position: absolute;
+				top: 50%;
+				right: 10px;
+			}
 		}
 		> li {
 			margin-bottom: 1px;
@@ -418,16 +442,6 @@
 			> a:after {
 				display: none;
 			}
-		}
-		> a:after {
-			content: "\f105";
-			color: $white;
-			display: block;
-			font: 18px/1 FontAwesome;
-			margin-top: -9px;
-			position: absolute;
-			top: 50%;
-			right: 10px;
 		}
 	}
 	.dropdown {
@@ -556,6 +570,9 @@
 						height: 27px;
 					}
 				}
+				&:after {
+					content: '';
+				}
 			}
 		}
 	}
@@ -640,7 +657,6 @@
 		}
 	}
 }
-
 @media screen and (min-width: 1025px) and (max-width: 1180px) {
 	.megamenu {
 		.menu-buyers-guide-image {
@@ -648,4 +664,3 @@
 		}
 	}
 }
-

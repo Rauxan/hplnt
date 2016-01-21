@@ -1,4 +1,3 @@
-
 <section class="hero-banner-section">
 <div class="main-container" style="background:url(images/hero-banner-bg-desktop.jpg) no-repeat center center; background-size:cover;">
 <!-- <img src="images/hero-banner-bg-mobile.jpg" alt="hero-banner-background-image" width="100%"  class="hero-banner-background-image"> -->
@@ -41,7 +40,6 @@ learn about hearing loss, hearing products, and more.</p>
 </div>
 </div>
 </div>
-
 
 
 </section>
